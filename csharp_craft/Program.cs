@@ -11,6 +11,15 @@ namespace csharp_craft
         static void Main(string[] args)
         {
             _ = args;
+
+
+            //int x; Tego ma nie być, bo jest niepotrzebne. Traktować warningi jak errory.
+            var tester = new PalindromeTester();
+            var palindrome = tester.IsPalindrome("too bad i hid a bo");
+            Console.WriteLine(palindrome);
+
+
+            Console.ReadLine();
         }
     }
 }
